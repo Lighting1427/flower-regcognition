@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.py[cod]
+*.ipynb_checkpoints
+.env
+*.h5
+train_model/flowers/
+train_model/Model.h5
+# VSCode
+.vscode/
+
+# FastAPI uploads
+web_page/uploads/
+web_page/Model.h5

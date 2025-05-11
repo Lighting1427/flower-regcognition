@@ -1,0 +1,80 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #fdfbfb, #ebedee);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 10px;
+    color: #333;
+    min-height: 100vh;
+}
+
+h1 {
+    color: #4CAF50;
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    text-shadow: 1px 1px 0px #fff;
+}
+
+p {
+    font-size: 1.1rem;
+    text-align: center;
+    max-width: 600px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+form {
+    background: white;
+    padding: 10px 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+form:hover {
+    transform: translateY(-3px);
+}
+
+input[type="file"] {
+    padding: 10px;
+    margin: 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: #f8f8f8;
+    cursor: pointer;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #388e3c;
+}
+
+h3 {
+    margin-top: 30px;
+    color: #2e7d32;
+    font-size: 1.3rem;
+}
+
+img {
+    margin-top: 10px;
+    max-width: 320px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🌸 Flower Classifier</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>🌸 Flower Classifier</h1>
+    <p>ระบบสำหรับทำนายดอกไม้จากภาพถ่าย<br>
+    <strong>รองรับเฉพาะ 5 ชนิด:</strong> Daisy, Dandelion, Rose, Sunflower, Tulip</p>
+
+    <form action="/predict" enctype="multipart/form-data" method="post">
+        <input type="file" name="file" accept="image/*" required>
+        <br>
+        <button type="submit">📷 Upload & Predict</button>
+    </form>
+
+    {% if result %}
+        <h3>ผลลัพธ์: {{ result }}</h3>
+        <img src="{{ image_path }}" alt="รูปภาพที่อัปโหลด">
+    {% endif %}
+</body>
+</html>
